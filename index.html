@@ -1,0 +1,66 @@
+<html>
+<head>
+  <title>Phreddit</title>
+  <link rel="stylesheet" href="css/index.css">
+  <script type="module" src="src/index.js"></script>
+</head>
+<body>
+
+  <div id="header" class="header"> <!-- the header is finished -->
+
+    <a href="#home" class="logo"> Phreddit </a>
+      <input class="search_main" id="search_main" placeholder="Search Phreddit…">
+      <button class="create_post" id="create_post">
+        Create Post + 
+      </button>
+  </div>
+
+  <div style="display: flex; height: 100%;"> <!--this makes sure that the 2 parts appear horizontally-->
+
+    <div id="sidebar" class="sidebar"> 
+
+      <div class="button-container"> 
+        <button class="home_sidebar" id="home_sidebar">
+          Home  
+        </button>
+      </div> 
+
+      <h1>Communities</h1>
+
+      <button class="home_sidebar" id="home_sidebar_createc">
+          Create Community
+      </button> 
+    
+      <ul class="comm_list" id="comm_list"></ul>
+
+    </div>
+
+    <div id="main" class="main">
+
+      <h1 id="big_header" style="width: 300px; word-wrap: break-word;">All Posts</h1> <!--header exsits outside of button group div -->
+
+      <div style="position: relative; float: right; margin-top: -70px;" id="main_button_wrapper">
+        <button class="newest" id="newest">
+          Newest
+        </button>
+
+        <button class="oldest" id="oldest">
+          Oldest
+        </button>
+
+        <button class="active" id="active">
+          Active
+        </button>
+      </div>
+
+        <p id="community_description" class="comm_dis"></p>  
+        <p class="counter_p" id="counter_p"> XX </p> 
+
+      <div class="posts-list" id="postsList" ></div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
